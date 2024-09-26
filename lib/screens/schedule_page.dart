@@ -15,7 +15,7 @@ class _SchedulePageState extends State<SchedulePage> {
 
   void _scrollToCenter(int index, double screenWidth) {
     double scrollPosition =
-        (index * 160.0) - (screenWidth / 2) + 80.0; // Center the tab
+        (index * 250.0) - (screenWidth / 2) + 125.0; // Center the tab
     _scrollController.animateTo(
       scrollPosition,
       duration: const Duration(milliseconds: 300),
@@ -57,7 +57,7 @@ class _SchedulePageState extends State<SchedulePage> {
                         padding: const EdgeInsets.symmetric(horizontal: 16),
                         alignment: Alignment.center,
                         margin: const EdgeInsets.symmetric(horizontal: 8),
-                        width: 200,
+                        width: 250,
                         // Fixed width for each tab
                         decoration: BoxDecoration(
                           color: _selectedIndex == index
@@ -93,11 +93,20 @@ class _SchedulePageState extends State<SchedulePage> {
               });
             },
             children: const <Widget>[
-              Column(
-                children: [DoctorCard(), DoctorCard(), DoctorCard()],
+              SingleChildScrollView(
+                child: Column(
+                  children: [
+                    DoctorCard(),
+                    DoctorCard(),
+                    DoctorCard(),
+                    DoctorCard()
+                  ],
+                ),
               ),
-              Column(
-                children: [DoctorCard(), DoctorCard()],
+              SingleChildScrollView(
+                child: Column(
+                  children: [DoctorCard(), DoctorCard()],
+                ),
               ),
               Center(child: Text('No Missed Schedule')),
             ],
