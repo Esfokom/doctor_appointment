@@ -18,20 +18,21 @@ design [here](https://www.figma.com/design/DnopTYPYmZniIrHBuu2r3J/Dokterian---Do
 
 ## Demo
 
-<div style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+<!-- GIF centered -->
+<div style="text-align: center;">
+  <img src="./screen_capture/screen_record.gif" alt="Screen Record GIF" style="width: 80%; height: auto;">
+</div>
 
-  <!-- GIF -->
-  <img src="./screen_capture/screen_record.gif" alt="Screen Record GIF" style="width: 320px; height: auto;">
+<!-- Screenshots on a new line, side by side -->
+<div style="display: flex; justify-content: space-around; margin-top: 20px;">
 
   <!-- Screenshot 1 -->
-  <img src="./screen_capture/screenshot1.png" alt="Screenshot 1" style="width: 320px; height: auto;">
+  <img src="./screen_capture/screenshot1.png" alt="Screenshot 1" style="width: 45%; height: auto;">
 
   <!-- Screenshot 2 -->
-  <img src="./screen_capture/screenshot2.png" alt="Screenshot 2" style="width: 320px; height: auto;">
+  <img src="./screen_capture/screenshot2.png" alt="Screenshot 2" style="width: 45%; height: auto;">
 
 </div>
 
-
----
 
 Feel free to explore and modify the UI as needed!
