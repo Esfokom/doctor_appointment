@@ -15,7 +15,7 @@ appointment system.
 
 Here's a video showing the UI in action:
 
-![Screen Record](./screen_capture/screen_record.mp4)
+![Screen Record](./screen_capture/screen_record.gif)
 
 ## Screenshots
 
